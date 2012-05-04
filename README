@@ -1,0 +1,4 @@
+1. After opening the solution update the projects build output path to the Azure SDK folder under Program Files.
+2. Open your Web Role and import the plugin using the ServiceDefinition.csdef file. This will automatically add the settings to your ServiceConfiguration files.
+3. Update the settings to match your Azure application
+
