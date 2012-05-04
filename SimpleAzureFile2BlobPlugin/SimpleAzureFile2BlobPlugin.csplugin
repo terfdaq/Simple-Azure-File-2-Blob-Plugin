@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" ?>
+<RoleModule
+  xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition"
+  namespace="SimpleAzureFile2BlobPlugin">
+  <Startup priority="-1">
+    <Task commandLine="SimpleAzureFile2BlobPlugin.exe > SimpleAzureFile2BlobPlugin.txt" taskType="background" executionContext="elevated"/>
+  </Startup>
+  <ConfigurationSettings>
+    <Setting name="StorageAccountName"/>
+    <Setting name="StorageAccountPrimaryKey"/>
+    <Setting name="SyncContainerName"/>
+    <Setting name="FolderToSync"/>
+  </ConfigurationSettings>
+</RoleModule>
